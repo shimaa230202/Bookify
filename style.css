@@ -1,0 +1,121 @@
+nav{
+   display: flex;
+   gap:15px;
+}
+header{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.library Image{
+    margin-top:100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding:20px;
+}
+.books {
+  display: grid;
+  gap: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+.books th, .books td {
+  border: 1px solid #0c616e;
+  padding: 10px;
+}
+caption {
+  caption-side: top; 
+  font-size: 23px;  
+  font-weight: bold; 
+  margin-bottom: 10px; 
+  color: rgb(0, 14, 19);  
+  text-align: justify; 
+}
+body{
+    font-family:Arial, Helvetica, sans-serif ;
+    line-height: 1.6;
+    background-color: antiquewhite;
+    color: black;
+}
+.top:hover {
+  background-color: rgb(220, 220, 227);
+  color: white;
+}
+.homepage:hover {
+  transform: scale(1.2);
+}
+.bottom:hover {
+  text-decoration: underline;
+  color: rgb(0, 8, 255);
+}
+input:hover {
+  border: 2px solid blue;
+  box-shadow: 0 0 5px blue;
+}
+.logo:hover {
+  transform: rotate(45deg);
+  transition: 0.3s ease;
+}
+body {
+  font-size: 18px;
+}
+@media (max-width: 992px) {
+  body {
+    font-size: 16px;
+    background-color: antiquewhite;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+    background-color:antiquewhite;
+  }
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+#getJoke {
+  padding: 10px 20px;
+  background: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#itemList li {
+  margin: 5px 0;
+  color: darkblue;
+}
+#myInput {
+  padding: 8px;
+  margin: 10px;
+}
+.box {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-in-out;
+  margin: 50px;
+  padding: 50px;
+  background: lightgray;
+}
+
+.box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
